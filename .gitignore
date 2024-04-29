@@ -1,0 +1,10 @@
+# Project place file
+/DataBlox.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+/*.lock
+
+/Packages/
