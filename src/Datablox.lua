@@ -156,6 +156,10 @@ function Datablox:ConvertInstancesToModules(): ()
                 valString = `\"{v}\"`
             elseif typeof(v) == "boolean" or typeof(v) == "number" then
                 valString = tostring(v)
+            elseif typeof(v) == "Vector2" then
+                valString = `Vector2.new({v.X}, {v.Y})`
+            elseif typeof(v) == "Vector3" then
+                valString = `Vector3.new({v.X}, {v.Y}, {v.Z})`
             else
                 error("Unknown entry type! Got " .. typeof(v))
             end
